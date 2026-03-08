@@ -5,6 +5,9 @@ using Zorg320.Utilitaire.FichierTemporaire.Noyau.Configuration;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Cles;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage;
 using Zorg320.Utilitaire.FichierTemporaire.Worker;
+using OpenTelemetry;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Metrics;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -31,6 +34,11 @@ try
     // ─── Services ─────────────────────────────────────────────────────────────
     builder.Services.AddSingleton<IGestionnaireCles, GestionnaireCles>();
     builder.Services.AddSingleton<IServiceStockage, ServiceStockage>();
+
+    // ─── OpenTelemetry ─────────────────────────────────────────────────────────
+    builder.Services.AddOpenTelemetry()
+        .WithMetrics(metrics => metrics
+            .AddRuntimeInstrumentation());
 
     // ─── Workers ──────────────────────────────────────────────────────────────
     builder.Services.AddHostedService<WorkerNettoyage>();
