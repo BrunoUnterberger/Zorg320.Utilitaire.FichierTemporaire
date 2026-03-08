@@ -1,5 +1,8 @@
 # Zorg320.Utilitaire.FichierTemporaire
 
+![.NET](https://img.shields.io/badge/.NET-8.0-blue)
+![Build](https://github.com/BrunoUnterberger/Zorg320.Utilitaire.FichierTemporaire/workflows/.NET/badge.svg)
+
 ## 📋 Description
 
 Zorg320.Utilitaire.FichierTemporaire est une solution .NET 8 complète pour la gestion sécurisée des fichiers temporaires. Elle offre une API REST pour uploader et télécharger des fichiers avec chiffrement intégré, ainsi qu'un worker d'arrière-plan pour le nettoyage automatique et la rotation des clés de chiffrement.
