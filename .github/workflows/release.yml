@@ -12,10 +12,10 @@ jobs:
         include:
           - app: api
             dockerfile: Dockerfile.api
-            image: ${{ secrets.DOCKERHUB_USERNAME }}/fichiertemporaire-api
+            image: fichiertemporaire-api
           - app: worker
             dockerfile: Dockerfile.worker
-            image: ${{ secrets.DOCKERHUB_USERNAME }}/fichiertemporaire-worker
+            image: fichiertemporaire-worker
     steps:
     - uses: actions/checkout@v4
 
@@ -29,7 +29,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v5
       with:
-        images: ${{ matrix.image }}
+        images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.image }}
         tags: |
           type=semver,pattern={{version}}
           type=semver,pattern={{major}}.{{minor}}
