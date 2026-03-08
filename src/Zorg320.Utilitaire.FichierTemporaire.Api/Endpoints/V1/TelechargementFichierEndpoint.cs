@@ -44,7 +44,19 @@ public sealed class TelechargementFichierEndpoint : Endpoint<RequeteTelechargeme
         Options(o => o
             .WithTags("Fichiers")
             .WithSummary("Télécharger un fichier temporaire")
-            .WithDescription("Télécharge et déchiffre un fichier temporaire. Retourne 404 si le fichier est introuvable ou expiré.")
+            .WithDescription("""
+                Télécharge et déchiffre un fichier temporaire identifié par son `identifiant` (obtenu lors de l'upload).
+
+                Le fichier est retourné en **streaming binaire** avec ses headers `Content-Type` et `Content-Disposition` d'origine.
+
+                **Expiration :** chaque appel réussi décrémente le compteur d'accès restants. Dès que la limite d'accès ou la durée de vie est atteinte, le fichier n'est plus accessible.
+
+                **Réponse 200 :** flux binaire du fichier déchiffré.
+
+                **Réponse 404 :** si le fichier est introuvable, expiré (durée dépassée) ou épuisé (nombre d'accès atteint).
+
+                > Aucune authentification requise — cet endpoint est toujours anonyme pour permettre le partage de liens.
+                """)
             .Produces(200)
             .Produces(404));
     }

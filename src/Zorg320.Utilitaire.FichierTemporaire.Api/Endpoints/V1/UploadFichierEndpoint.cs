@@ -69,7 +69,22 @@ public sealed class UploadFichierEndpoint : Endpoint<RequeteUpload, ReponseBase<
         Options(o => o
             .WithTags("Fichiers")
             .WithSummary("Uploader un fichier temporaire")
-            .WithDescription("Dépose un fichier temporaire chiffré avec une durée de vie configurable.")
+            .WithDescription("""
+                Dépose un fichier en **multipart/form-data**. Le fichier est immédiatement chiffré côté serveur (AES-256-GCM) et stocké avec ses métadonnées d'expiration.
+
+                **Champs du formulaire :**
+                - `Fichier` *(obligatoire)* — fichier à uploader.
+                - `DureeVieMinutes` *(optionnel)* — nombre de minutes avant expiration (à partir de l'upload).
+                - `NombreAccesMax` *(optionnel)* — nombre maximal de téléchargements autorisés.
+
+                **Comportement par défaut :**
+                - Si `NombreAccesMax` est fourni sans `DureeVieMinutes`, une durée de 60 minutes est appliquée automatiquement.
+                - Si aucune limite n'est fournie, une durée de 30 minutes est appliquée automatiquement.
+
+                **Réponse 201 :** contient l'`identifiant` du fichier et un lien direct de téléchargement dans `liens.telechargement`.
+
+                **Réponse 400 :** si le fichier est absent ou si les paramètres sont invalides.
+                """)
             .Produces<ReponseBase<DonneesUpload>>(201)
             .Produces<ReponseBase<DonneesUpload>>(400));
     }

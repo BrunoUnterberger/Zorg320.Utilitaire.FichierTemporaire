@@ -117,15 +117,93 @@ try
             .AddRuntimeInstrumentation());
 
     // ─── FastEndpoints + Swagger ───────────────────────────────────────────────
+
+    // Section "Authentification" de la description Swagger, construite dynamiquement
+    // à partir de la configuration réelle afin de refléter l'état réel du serveur.
+    var descriptionAuthentification = authConfig.Activer
+        ? $"""
+           ## Authentification
+
+           Authentification OIDC / JWT Bearer activée avec les paramètres suivants et un jeton doit être généré depuis le fournisseur d'identité configuré :
+              - **Autorité OIDC** : {authConfig.Autorite}
+           """
+        : """
+          ## Authentification
+
+          L'authentification est **désactivée** sur cet environnement — tous les endpoints sont accessibles anonymement.
+          """;
+
     builder.Services
         .AddFastEndpoints()
         .SwaggerDocument(o =>
         {
+            o.AutoTagPathSegmentIndex = 0; // Désactive la génération automatique de tags depuis l'URL
             o.DocumentSettings = s =>
             {
                 s.Title = "API Fichiers Temporaires";
                 s.Version = "v1";
-                s.Description = "API de gestion de fichiers temporaires chiffrés avec expiration configurable.";
+                s.Description = $"""
+                    ## Vue d'ensemble
+
+                    API de gestion de **fichiers temporaires chiffrés** permettant de déposer un fichier et de le partager via un lien à usage limité.
+
+                    Chaque fichier est chiffré côté serveur avec **AES-256-GCM** (par chunks de 1 Mo) et une clé dérivée par fichier via **HKDF-SHA-256**.
+                    Une fois la limite atteinte, le fichier n'est plus accessible et sera supprimé lors du prochain nettoyage automatique.
+
+                    ---
+
+                    ## Cycle de vie d'un fichier
+
+                    1. **Upload** — `POST /v1/fichiers` — déposer le fichier avec ses limites d'expiration.
+                    2. **Réception** — l'API retourne un `identifiant` unique et un lien de téléchargement.
+                    3. **Téléchargement** — `GET /v1/fichiers/{{identifiant}}` — récupérer le fichier déchiffré en streaming.
+                    4. **Expiration** — le fichier devient inaccessible (HTTP 404) dès que l'une des limites est atteinte.
+
+                    ---
+
+                    ## Limites d'expiration
+
+                    Deux types de limites, combinables :
+
+                    | Paramètre | Type | Description |
+                    |---|---|---|
+                    | `DureeVieMinutes` | `int` (optionnel) | Durée maximale de disponibilité en minutes à partir de l'upload. |
+                    | `NombreAccesMax` | `int` (optionnel) | Nombre maximal de téléchargements autorisés. |
+
+                    **Comportement par défaut si aucune limite n'est fournie :**
+                    - `NombreAccesMax` fourni sans `DureeVieMinutes` → durée de vie de **60 minutes** appliquée automatiquement.
+                    - Aucune limite fournie → durée de vie de **30 minutes** appliquée automatiquement.
+
+                    ---
+
+                    ## Structure de réponse standard (upload)
+
+                    Toutes les réponses de l'endpoint d'upload suivent cette enveloppe :
+
+                    ```json
+                    {{
+                      "donnees": {{ "identifiant": "abc123..." }},
+                      "erreurs": [],
+                      "informations": [{{ "code": "INF001", "message": "Le fichier a été déposé avec succès." }}],
+                      "avertissements": [],
+                      "liens": [{{ "telechargement": "https://…/v1/fichiers/abc123" }}]
+                    }}
+                    ```
+
+                    > Le téléchargement retourne directement le fichier binaire (pas d'enveloppe JSON). En cas d'erreur : HTTP 404 simple.
+
+                    ---
+
+                    {descriptionAuthentification}
+
+                    ---
+
+                    ## Sécurité & confidentialité
+
+                    - Le contenu des fichiers n'est **jamais stocké en clair** sur le serveur.
+                    - Chaque fichier possède sa propre clé de chiffrement dérivée (sel aléatoire unique).
+                    - Les fichiers expirés sont supprimés automatiquement par un service de nettoyage en arrière-plan.
+                    """;
 
                 if (authConfig.Activer)
                     s.EnableJWTBearerAuth();
