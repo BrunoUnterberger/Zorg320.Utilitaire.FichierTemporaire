@@ -142,7 +142,7 @@ try
             {
                 s.Title = "API Fichiers Temporaires";
                 s.Version = "v1";
-                s.Description = $"""
+                s.Description = $$"""
                     ## Vue d'ensemble
 
                     API de gestion de **fichiers temporaires chiffrés** permettant de déposer un fichier et de le partager via un lien à usage limité.
@@ -156,7 +156,7 @@ try
 
                     1. **Upload** — `POST /v1/fichiers` — déposer le fichier avec ses limites d'expiration.
                     2. **Réception** — l'API retourne un `identifiant` unique et un lien de téléchargement.
-                    3. **Téléchargement** — `GET /v1/fichiers/{{identifiant}}` — récupérer le fichier déchiffré en streaming.
+                    3. **Téléchargement** — `GET /v1/fichiers/{identifiant}` — récupérer le fichier déchiffré en streaming.
                     4. **Expiration** — le fichier devient inaccessible (HTTP 404) dès que l'une des limites est atteinte.
 
                     ---
@@ -181,20 +181,20 @@ try
                     Toutes les réponses de l'endpoint d'upload suivent cette enveloppe :
 
                     ```json
-                    {{
-                      "donnees": {{ "identifiant": "abc123..." }},
+                    {
+                      "donnees": { "identifiant": "abc123..." },
                       "erreurs": [],
-                      "informations": [{{ "code": "INF001", "message": "Le fichier a été déposé avec succès." }}],
+                      "informations": [{ "code": "INF001", "message": "Le fichier a été déposé avec succès." }],
                       "avertissements": [],
-                      "liens": [{{ "telechargement": "https://…/v1/fichiers/abc123" }}]
-                    }}
+                      "liens": [{ "telechargement": "https://…/v1/fichiers/abc123" }]
+                    }
                     ```
 
                     > Le téléchargement retourne directement le fichier binaire (pas d'enveloppe JSON). En cas d'erreur : HTTP 404 simple.
 
                     ---
 
-                    {descriptionAuthentification}
+                    {{descriptionAuthentification}}
 
                     ---
 
