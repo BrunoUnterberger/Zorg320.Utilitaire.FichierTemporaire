@@ -10,6 +10,9 @@ using Zorg320.Utilitaire.FichierTemporaire.Noyau.Configuration;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Chiffrement;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Cles;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage;
+using OpenTelemetry;
+using OpenTelemetry.Trace;
+using OpenTelemetry.Metrics;
 
 // ─── Configuration de Serilog depuis appsettings ───────────────────────────────
 Log.Logger = new LoggerConfiguration()
@@ -104,6 +107,14 @@ try
             options.AddPolicy("PolitiqueAccesApi", politique);
         }
     });
+    // ─── OpenTelemetry ─────────────────────────────────────────────────────────
+    builder.Services.AddOpenTelemetry()
+        .WithTracing(tracing => tracing
+            .AddAspNetCoreInstrumentation()
+            .AddHttpClientInstrumentation())
+        .WithMetrics(metrics => metrics
+            .AddAspNetCoreInstrumentation()
+            .AddRuntimeInstrumentation());
 
     // ─── FastEndpoints + Swagger ───────────────────────────────────────────────
     builder.Services
