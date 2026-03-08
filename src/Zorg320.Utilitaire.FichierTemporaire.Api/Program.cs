@@ -55,6 +55,8 @@ try
     var app = builder.Build();
 
     // ─── Middleware ───────────────────────────────────────────────────────────
+    app.UseMiddleware<CorrelationIdMiddleware>();
+
     app.UseSerilogRequestLogging(opts =>
     {
         opts.MessageTemplate = "HTTP {RequestMethod} {RequestPath} répondu {StatusCode} en {Elapsed:0.0000}ms";
