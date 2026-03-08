@@ -1,0 +1,16 @@
+FROM mcr.microsoft.com/dotnet/runtime:8.0 AS base
+WORKDIR /app
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+COPY ["src/Zorg320.Utilitaire.FichierTemporaire.Worker/Zorg320.Utilitaire.FichierTemporaire.Worker.csproj", "Zorg320.Utilitaire.FichierTemporaire.Worker/"]
+COPY ["src/Zorg320.Utilitaire.FichierTemporaire.Noyau/Zorg320.Utilitaire.FichierTemporaire.Noyau.csproj", "Zorg320.Utilitaire.FichierTemporaire.Noyau/"]
+RUN dotnet restore "Zorg320.Utilitaire.FichierTemporaire.Worker/Zorg320.Utilitaire.FichierTemporaire.Worker.csproj"
+COPY src/ .
+RUN dotnet publish "Zorg320.Utilitaire.FichierTemporaire.Worker/Zorg320.Utilitaire.FichierTemporaire.Worker.csproj" \
+    -c Release -o /app/publish --no-restore
+
+FROM base AS final
+WORKDIR /app
+COPY --from=build /app/publish .
+ENTRYPOINT ["dotnet", "Zorg320.Utilitaire.FichierTemporaire.Worker.dll"]
