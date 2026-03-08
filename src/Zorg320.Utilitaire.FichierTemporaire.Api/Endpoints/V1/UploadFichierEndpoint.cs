@@ -2,7 +2,9 @@ using FastEndpoints;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload;
+using Zorg320.Utilitaire.FichierTemporaire.Api.Configuration;
 using Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.Commun;
 
 namespace Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1;
@@ -39,23 +41,30 @@ public sealed class UploadFichierEndpoint : Endpoint<RequeteUpload, ReponseBase<
 {
     private readonly IMediator _mediator;
     private readonly ILogger<UploadFichierEndpoint> _logger;
+    private readonly ConfigurationAuthentification _configAuth;
 
     /// <summary>
     /// Initialise une nouvelle instance de <see cref="UploadFichierEndpoint"/>.
     /// </summary>
-    public UploadFichierEndpoint(IMediator mediator, ILogger<UploadFichierEndpoint> logger)
+    public UploadFichierEndpoint(
+        IMediator mediator,
+        ILogger<UploadFichierEndpoint> logger,
+        IOptions<ConfigurationAuthentification> configAuth)
     {
         _mediator = mediator;
         _logger = logger;
+        _configAuth = configAuth.Value;
     }
 
     /// <summary>
     /// Configure la route, le verbe HTTP et les options de l'endpoint.
+    /// L'authentification est requise uniquement si <see cref="ConfigurationAuthentification.Activer"/> est <c>true</c>.
     /// </summary>
     public override void Configure()
     {
         Post("/v1/fichiers");
-        AllowAnonymous();
+        if (!_configAuth.Activer)
+            AllowAnonymous();
         AllowFileUploads();
         Options(o => o
             .WithTags("Fichiers")
