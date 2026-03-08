@@ -1,0 +1,13 @@
+2026-03-08 10:11:39.285 +01:00 [INF]  Worker prêt — démarrage de la boucle de nettoyage
+2026-03-08 10:11:39.322 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Répertoire de stockage créé : C:/temp/fichiers-temporaires
+2026-03-08 10:11:39.336 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Worker.WorkerNettoyage Worker de nettoyage démarré — intervalle=60 minute(s)
+2026-03-08 10:11:39.343 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 10:11:39.343 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Production
+2026-03-08 10:11:39.343 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Worker
+2026-03-08 10:12:28.377 +01:00 [INF]  Worker prêt — démarrage de la boucle de nettoyage
+2026-03-08 10:12:28.414 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Worker.WorkerNettoyage Worker de nettoyage démarré — intervalle=1 minute(s)
+2026-03-08 10:12:28.420 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 10:12:28.420 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Production
+2026-03-08 10:12:28.420 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Worker
+2026-03-08 10:17:28.072 +01:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+2026-03-08 10:17:28.075 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Worker.WorkerNettoyage Worker de nettoyage arrêté

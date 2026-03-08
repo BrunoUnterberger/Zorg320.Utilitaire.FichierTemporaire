@@ -1,0 +1,6 @@
+@Zorg320.Utilitaire.FichierTemporaire.Api_HostAddress = http://localhost:5070
+
+GET {{Zorg320.Utilitaire.FichierTemporaire.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,705 @@
+2026-03-08 09:38:02.136 +01:00 [INF] FastEndpoints.StartupTimer Registered 2 endpoints in 218 milliseconds.
+2026-03-08 09:38:02.261 +01:00 [INF] FastEndpoints.Swagger.ValidationSchemaProcessor No validators found in the system!
+2026-03-08 09:38:02.266 +01:00 [INF]  API démarrée et prête à recevoir des requêtes
+2026-03-08 09:38:02.279 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Service de nettoyage démarré — intervalle=5 minute(s)
+2026-03-08 09:38:02.281 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 09:38:02.313 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Suppression du fichier expiré — identifiant=17148178c82a4e919024918d1d227d44, fichier=MementoJanvier2026 (1).pdf
+2026-03-08 09:38:02.315 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré supprimé : C:/temp/fichiers-temporaires-dev\17148178c82a4e919024918d1d227d44.enc
+2026-03-08 09:38:02.316 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier de métadonnées supprimé : C:/temp/fichiers-temporaires-dev\17148178c82a4e919024918d1d227d44.meta
+2026-03-08 09:38:02.319 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Suppression du fichier expiré — identifiant=e2551f03b6a2476f9ee848552c07bf19, fichier=MementoJanvier2026 (1).pdf
+2026-03-08 09:38:02.320 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré supprimé : C:/temp/fichiers-temporaires-dev\e2551f03b6a2476f9ee848552c07bf19.enc
+2026-03-08 09:38:02.321 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier de métadonnées supprimé : C:/temp/fichiers-temporaires-dev\e2551f03b6a2476f9ee848552c07bf19.meta
+2026-03-08 09:38:02.321 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — 2 fichier(s) supprimé(s), 0 erreur(s)
+2026-03-08 09:38:02.344 +01:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5070
+2026-03-08 09:38:02.344 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 09:38:02.344 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2026-03-08 09:38:02.345 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Api
+2026-03-08 09:38:02.613 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/weatherforecast - null null
+2026-03-08 09:38:02.650 +01:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2026-03-08 09:38:02.654 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /weatherforecast répondu 404 en 4.6455ms
+2026-03-08 09:38:02.659 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/weatherforecast - 404 0 null 48.1936ms
+2026-03-08 09:38:02.665 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5070/weatherforecast, Response status code: 404
+2026-03-08 09:38:09.233 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger - null null
+2026-03-08 09:38:09.236 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger répondu 302 en 2.6816ms
+2026-03-08 09:38:09.237 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger - 302 0 null 3.8508ms
+2026-03-08 09:38:09.240 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:38:09.339 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 98.5545ms
+2026-03-08 09:38:09.340 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 99.4681ms
+2026-03-08 09:38:09.362 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:38:09.364 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.1312ms
+2026-03-08 09:38:09.526 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:38:09.541 +01:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-08 09:38:09.842 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 315.4317ms
+2026-03-08 09:38:09.842 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 316.0989ms
+2026-03-08 09:38:18.179 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundary7qTO17kjc8gfYFIL 1220118
+2026-03-08 09:38:18.181 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:18.232 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:18.259 +01:00 [WRN] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Upload refusé — erreurs de validation : Au moins une limite de durée de vie est obligatoire : durée en minutes ou nombre d'accès maximum.
+2026-03-08 09:38:18.271 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:18.271 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 400 en 91.1407ms
+2026-03-08 09:38:18.272 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 400 null application/json; charset=utf-8 93.712ms
+2026-03-08 09:38:23.148 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryAKmrmq4bvUsvaPaS 1220119
+2026-03-08 09:38:23.149 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:23.159 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:23.165 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=593f44a5216647c08f8a658f2f7db786, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:23.172 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 593f44a5216647c08f8a658f2f7db786
+2026-03-08 09:38:23.173 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 593f44a5216647c08f8a658f2f7db786
+2026-03-08 09:38:23.182 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:23.187 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:23.189 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 593f44a5216647c08f8a658f2f7db786 — taille chiffrée=1219774
+2026-03-08 09:38:23.189 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 593f44a5216647c08f8a658f2f7db786
+2026-03-08 09:38:23.189 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\593f44a5216647c08f8a658f2f7db786.enc
+2026-03-08 09:38:23.190 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\593f44a5216647c08f8a658f2f7db786.enc
+2026-03-08 09:38:23.193 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 593f44a5216647c08f8a658f2f7db786
+2026-03-08 09:38:23.194 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\593f44a5216647c08f8a658f2f7db786.meta
+2026-03-08 09:38:23.198 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\593f44a5216647c08f8a658f2f7db786.meta
+2026-03-08 09:38:23.202 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=593f44a5216647c08f8a658f2f7db786, expiration=2026-03-08T09:08:23.1933934+00:00, accesMax=illimité
+2026-03-08 09:38:23.203 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=593f44a5216647c08f8a658f2f7db786
+2026-03-08 09:38:23.205 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:23.206 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 57.0019ms
+2026-03-08 09:38:23.207 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 58.925ms
+2026-03-08 09:38:35.156 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryn6COrqe65wmqU0wR 1220119
+2026-03-08 09:38:35.157 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.168 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:35.169 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=3867add914b84904a5628cc92867fa61, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:35.169 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 3867add914b84904a5628cc92867fa61
+2026-03-08 09:38:35.169 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 3867add914b84904a5628cc92867fa61
+2026-03-08 09:38:35.169 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:35.170 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:35.171 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 3867add914b84904a5628cc92867fa61 — taille chiffrée=1219774
+2026-03-08 09:38:35.171 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 3867add914b84904a5628cc92867fa61
+2026-03-08 09:38:35.171 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\3867add914b84904a5628cc92867fa61.enc
+2026-03-08 09:38:35.172 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\3867add914b84904a5628cc92867fa61.enc
+2026-03-08 09:38:35.175 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 3867add914b84904a5628cc92867fa61
+2026-03-08 09:38:35.175 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\3867add914b84904a5628cc92867fa61.meta
+2026-03-08 09:38:35.176 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\3867add914b84904a5628cc92867fa61.meta
+2026-03-08 09:38:35.178 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=3867add914b84904a5628cc92867fa61, expiration=2026-03-08T09:08:35.1756626+00:00, accesMax=illimité
+2026-03-08 09:38:35.179 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=3867add914b84904a5628cc92867fa61
+2026-03-08 09:38:35.179 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.179 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 22.2997ms
+2026-03-08 09:38:35.180 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 23.344ms
+2026-03-08 09:38:35.647 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryg3Non2A6vRECtWzt 1220119
+2026-03-08 09:38:35.647 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.656 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:35.656 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=3f1bc02447ca4394871c6c52939bd11a, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:35.656 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 3f1bc02447ca4394871c6c52939bd11a
+2026-03-08 09:38:35.657 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 3f1bc02447ca4394871c6c52939bd11a
+2026-03-08 09:38:35.657 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:35.658 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:35.659 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 3f1bc02447ca4394871c6c52939bd11a — taille chiffrée=1219774
+2026-03-08 09:38:35.659 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 3f1bc02447ca4394871c6c52939bd11a
+2026-03-08 09:38:35.659 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\3f1bc02447ca4394871c6c52939bd11a.enc
+2026-03-08 09:38:35.660 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\3f1bc02447ca4394871c6c52939bd11a.enc
+2026-03-08 09:38:35.662 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 3f1bc02447ca4394871c6c52939bd11a
+2026-03-08 09:38:35.663 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\3f1bc02447ca4394871c6c52939bd11a.meta
+2026-03-08 09:38:35.663 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\3f1bc02447ca4394871c6c52939bd11a.meta
+2026-03-08 09:38:35.666 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=3f1bc02447ca4394871c6c52939bd11a, expiration=2026-03-08T09:08:35.6629214+00:00, accesMax=illimité
+2026-03-08 09:38:35.666 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=3f1bc02447ca4394871c6c52939bd11a
+2026-03-08 09:38:35.666 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.666 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 19.2736ms
+2026-03-08 09:38:35.667 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 20.1441ms
+2026-03-08 09:38:35.825 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryzgZLL5yFjKpUoD4Z 1220119
+2026-03-08 09:38:35.826 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.833 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:35.834 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=8174b11659644cfab0a84fa2627fd3e9, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:35.834 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 8174b11659644cfab0a84fa2627fd3e9
+2026-03-08 09:38:35.834 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 8174b11659644cfab0a84fa2627fd3e9
+2026-03-08 09:38:35.834 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:35.835 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:35.836 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 8174b11659644cfab0a84fa2627fd3e9 — taille chiffrée=1219774
+2026-03-08 09:38:35.836 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 8174b11659644cfab0a84fa2627fd3e9
+2026-03-08 09:38:35.836 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\8174b11659644cfab0a84fa2627fd3e9.enc
+2026-03-08 09:38:35.837 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\8174b11659644cfab0a84fa2627fd3e9.enc
+2026-03-08 09:38:35.840 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 8174b11659644cfab0a84fa2627fd3e9
+2026-03-08 09:38:35.840 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\8174b11659644cfab0a84fa2627fd3e9.meta
+2026-03-08 09:38:35.841 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\8174b11659644cfab0a84fa2627fd3e9.meta
+2026-03-08 09:38:35.843 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=8174b11659644cfab0a84fa2627fd3e9, expiration=2026-03-08T09:08:35.8403826+00:00, accesMax=illimité
+2026-03-08 09:38:35.844 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=8174b11659644cfab0a84fa2627fd3e9
+2026-03-08 09:38:35.844 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.844 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 18.5551ms
+2026-03-08 09:38:35.845 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 19.389ms
+2026-03-08 09:38:35.968 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundary8tNBijMOQYXDAp4k 1220119
+2026-03-08 09:38:35.968 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.977 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:35.977 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=411e3ec253f14b2ab3ca3711b0d8f84f, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:35.977 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 411e3ec253f14b2ab3ca3711b0d8f84f
+2026-03-08 09:38:35.977 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 411e3ec253f14b2ab3ca3711b0d8f84f
+2026-03-08 09:38:35.978 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:35.979 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:35.979 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 411e3ec253f14b2ab3ca3711b0d8f84f — taille chiffrée=1219774
+2026-03-08 09:38:35.980 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 411e3ec253f14b2ab3ca3711b0d8f84f
+2026-03-08 09:38:35.980 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\411e3ec253f14b2ab3ca3711b0d8f84f.enc
+2026-03-08 09:38:35.981 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\411e3ec253f14b2ab3ca3711b0d8f84f.enc
+2026-03-08 09:38:35.983 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 411e3ec253f14b2ab3ca3711b0d8f84f
+2026-03-08 09:38:35.983 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\411e3ec253f14b2ab3ca3711b0d8f84f.meta
+2026-03-08 09:38:35.984 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\411e3ec253f14b2ab3ca3711b0d8f84f.meta
+2026-03-08 09:38:35.986 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=411e3ec253f14b2ab3ca3711b0d8f84f, expiration=2026-03-08T09:08:35.9834318+00:00, accesMax=illimité
+2026-03-08 09:38:35.986 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=411e3ec253f14b2ab3ca3711b0d8f84f
+2026-03-08 09:38:35.986 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:35.986 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 18.6241ms
+2026-03-08 09:38:35.987 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 19.48ms
+2026-03-08 09:38:36.106 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryK6NjiRU1kVOgK2Yy 1220119
+2026-03-08 09:38:36.107 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.115 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:36.116 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=949a3bb4f0714d44bfc5f7cd9117cff7, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:36.116 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 949a3bb4f0714d44bfc5f7cd9117cff7
+2026-03-08 09:38:36.116 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 949a3bb4f0714d44bfc5f7cd9117cff7
+2026-03-08 09:38:36.116 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:36.117 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:36.118 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 949a3bb4f0714d44bfc5f7cd9117cff7 — taille chiffrée=1219774
+2026-03-08 09:38:36.118 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 949a3bb4f0714d44bfc5f7cd9117cff7
+2026-03-08 09:38:36.118 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\949a3bb4f0714d44bfc5f7cd9117cff7.enc
+2026-03-08 09:38:36.119 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\949a3bb4f0714d44bfc5f7cd9117cff7.enc
+2026-03-08 09:38:36.122 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 949a3bb4f0714d44bfc5f7cd9117cff7
+2026-03-08 09:38:36.122 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\949a3bb4f0714d44bfc5f7cd9117cff7.meta
+2026-03-08 09:38:36.122 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\949a3bb4f0714d44bfc5f7cd9117cff7.meta
+2026-03-08 09:38:36.125 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=949a3bb4f0714d44bfc5f7cd9117cff7, expiration=2026-03-08T09:08:36.1220289+00:00, accesMax=illimité
+2026-03-08 09:38:36.125 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=949a3bb4f0714d44bfc5f7cd9117cff7
+2026-03-08 09:38:36.125 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.126 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 18.9215ms
+2026-03-08 09:38:36.126 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 19.8387ms
+2026-03-08 09:38:36.230 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryF7S216fiZYwmOko3 1220119
+2026-03-08 09:38:36.230 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.238 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:36.239 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=694b79929ea547609ffcd78c384f6bdf, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:36.239 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 694b79929ea547609ffcd78c384f6bdf
+2026-03-08 09:38:36.239 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 694b79929ea547609ffcd78c384f6bdf
+2026-03-08 09:38:36.239 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:36.245 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:36.245 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 694b79929ea547609ffcd78c384f6bdf — taille chiffrée=1219774
+2026-03-08 09:38:36.246 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 694b79929ea547609ffcd78c384f6bdf
+2026-03-08 09:38:36.246 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\694b79929ea547609ffcd78c384f6bdf.enc
+2026-03-08 09:38:36.248 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\694b79929ea547609ffcd78c384f6bdf.enc
+2026-03-08 09:38:36.250 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 694b79929ea547609ffcd78c384f6bdf
+2026-03-08 09:38:36.250 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\694b79929ea547609ffcd78c384f6bdf.meta
+2026-03-08 09:38:36.251 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\694b79929ea547609ffcd78c384f6bdf.meta
+2026-03-08 09:38:36.253 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=694b79929ea547609ffcd78c384f6bdf, expiration=2026-03-08T09:08:36.2505526+00:00, accesMax=illimité
+2026-03-08 09:38:36.253 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=694b79929ea547609ffcd78c384f6bdf
+2026-03-08 09:38:36.254 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.254 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 23.4468ms
+2026-03-08 09:38:36.254 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 24.1612ms
+2026-03-08 09:38:36.372 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundarySX8nwpkdwcbNDhaH 1220119
+2026-03-08 09:38:36.372 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.380 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:36.380 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=cd051a3803c745e2934e7c84472d7688, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:36.380 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier cd051a3803c745e2934e7c84472d7688
+2026-03-08 09:38:36.380 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour cd051a3803c745e2934e7c84472d7688
+2026-03-08 09:38:36.380 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:36.381 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:36.383 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour cd051a3803c745e2934e7c84472d7688 — taille chiffrée=1219774
+2026-03-08 09:38:36.383 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour cd051a3803c745e2934e7c84472d7688
+2026-03-08 09:38:36.383 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\cd051a3803c745e2934e7c84472d7688.enc
+2026-03-08 09:38:36.387 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\cd051a3803c745e2934e7c84472d7688.enc
+2026-03-08 09:38:36.390 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour cd051a3803c745e2934e7c84472d7688
+2026-03-08 09:38:36.390 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\cd051a3803c745e2934e7c84472d7688.meta
+2026-03-08 09:38:36.390 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\cd051a3803c745e2934e7c84472d7688.meta
+2026-03-08 09:38:36.392 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=cd051a3803c745e2934e7c84472d7688, expiration=2026-03-08T09:08:36.3902913+00:00, accesMax=illimité
+2026-03-08 09:38:36.393 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=cd051a3803c745e2934e7c84472d7688
+2026-03-08 09:38:36.393 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.393 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 21.0400ms
+2026-03-08 09:38:36.393 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 21.8059ms
+2026-03-08 09:38:36.516 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryHpnZAk29B8vHpWBm 1220119
+2026-03-08 09:38:36.516 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.524 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:36.525 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=dee7df6fc0264a93afbf9cbb37123882, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:36.525 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier dee7df6fc0264a93afbf9cbb37123882
+2026-03-08 09:38:36.525 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour dee7df6fc0264a93afbf9cbb37123882
+2026-03-08 09:38:36.525 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:36.526 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:36.527 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour dee7df6fc0264a93afbf9cbb37123882 — taille chiffrée=1219774
+2026-03-08 09:38:36.527 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour dee7df6fc0264a93afbf9cbb37123882
+2026-03-08 09:38:36.527 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\dee7df6fc0264a93afbf9cbb37123882.enc
+2026-03-08 09:38:36.528 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\dee7df6fc0264a93afbf9cbb37123882.enc
+2026-03-08 09:38:36.531 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour dee7df6fc0264a93afbf9cbb37123882
+2026-03-08 09:38:36.531 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\dee7df6fc0264a93afbf9cbb37123882.meta
+2026-03-08 09:38:36.531 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\dee7df6fc0264a93afbf9cbb37123882.meta
+2026-03-08 09:38:36.533 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=dee7df6fc0264a93afbf9cbb37123882, expiration=2026-03-08T09:08:36.5310875+00:00, accesMax=illimité
+2026-03-08 09:38:36.533 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=dee7df6fc0264a93afbf9cbb37123882
+2026-03-08 09:38:36.533 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.533 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 16.9962ms
+2026-03-08 09:38:36.534 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 17.7381ms
+2026-03-08 09:38:36.672 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundarytJxXBcZcWSrieGs9 1220119
+2026-03-08 09:38:36.672 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.681 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:38:36.681 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=856c5fce68524dca83f47a7457a48151, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:38:36.681 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 856c5fce68524dca83f47a7457a48151
+2026-03-08 09:38:36.681 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 856c5fce68524dca83f47a7457a48151
+2026-03-08 09:38:36.681 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:38:36.682 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:38:36.683 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 856c5fce68524dca83f47a7457a48151 — taille chiffrée=1219774
+2026-03-08 09:38:36.683 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 856c5fce68524dca83f47a7457a48151
+2026-03-08 09:38:36.683 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\856c5fce68524dca83f47a7457a48151.enc
+2026-03-08 09:38:36.684 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\856c5fce68524dca83f47a7457a48151.enc
+2026-03-08 09:38:36.686 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 856c5fce68524dca83f47a7457a48151
+2026-03-08 09:38:36.686 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\856c5fce68524dca83f47a7457a48151.meta
+2026-03-08 09:38:36.687 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\856c5fce68524dca83f47a7457a48151.meta
+2026-03-08 09:38:36.689 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=856c5fce68524dca83f47a7457a48151, expiration=2026-03-08T09:08:36.6868973+00:00, accesMax=illimité
+2026-03-08 09:38:36.689 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=856c5fce68524dca83f47a7457a48151
+2026-03-08 09:38:36.689 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:36.689 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 17.1209ms
+2026-03-08 09:38:36.689 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 17.7861ms
+2026-03-08 09:38:43.722 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryBX3uX4cRXzdAngIE 349
+2026-03-08 09:38:43.723 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:43.728 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:43.728 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 400 en 5.2704ms
+2026-03-08 09:38:43.728 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 400 null application/problem+json; charset=utf-8 5.7218ms
+2026-03-08 09:38:50.374 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundarykXlCY1V4caOYOGrr 349
+2026-03-08 09:38:50.374 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:50.375 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:50.375 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 400 en 0.8376ms
+2026-03-08 09:38:50.375 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 400 null application/problem+json; charset=utf-8 1.2255ms
+2026-03-08 09:38:56.915 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundarydkcBmCOpweGsvV6z 349
+2026-03-08 09:38:56.915 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:56.916 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:38:56.916 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 400 en 0.6080ms
+2026-03-08 09:38:56.916 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 400 null application/problem+json; charset=utf-8 0.9874ms
+2026-03-08 09:39:00.709 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:39:00.709 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.5701ms
+2026-03-08 09:39:00.710 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.9412ms
+2026-03-08 09:39:00.737 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:39:00.738 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3688ms
+2026-03-08 09:39:00.871 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:39:00.871 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.2140ms
+2026-03-08 09:39:00.872 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.6117ms
+2026-03-08 09:39:05.516 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryvAZwpG7nhoZCWJED 1220118
+2026-03-08 09:39:05.516 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:39:05.527 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:39:05.528 +01:00 [WRN] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Upload refusé — erreurs de validation : Au moins une limite de durée de vie est obligatoire : durée en minutes ou nombre d'accès maximum.
+2026-03-08 09:39:05.528 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:39:05.528 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 400 en 11.8994ms
+2026-03-08 09:39:05.528 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 400 null application/json; charset=utf-8 12.7269ms
+2026-03-08 09:40:09.563 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:40:09.564 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.8315ms
+2026-03-08 09:40:09.564 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.237ms
+2026-03-08 09:40:09.610 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:40:09.610 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2958ms
+2026-03-08 09:40:09.704 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:40:09.704 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0855ms
+2026-03-08 09:40:09.704 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3877ms
+2026-03-08 09:40:49.577 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:40:49.578 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3862ms
+2026-03-08 09:40:49.578 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.6963ms
+2026-03-08 09:40:49.626 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:40:49.626 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2822ms
+2026-03-08 09:40:49.719 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:40:49.720 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0842ms
+2026-03-08 09:40:49.720 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3918ms
+2026-03-08 09:43:02.337 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 09:43:02.342 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — aucun fichier expiré trouvé
+2026-03-08 09:43:34.170 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:43:34.170 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3696ms
+2026-03-08 09:43:34.170 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.734ms
+2026-03-08 09:43:34.241 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:43:34.241 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2887ms
+2026-03-08 09:43:34.330 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:43:34.330 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1001ms
+2026-03-08 09:43:34.331 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.485ms
+2026-03-08 09:43:40.840 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:43:40.840 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3529ms
+2026-03-08 09:43:40.840 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7185ms
+2026-03-08 09:43:40.881 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:43:40.881 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.357ms
+2026-03-08 09:43:40.963 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:43:40.964 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1092ms
+2026-03-08 09:43:40.964 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4435ms
+2026-03-08 09:45:31.156 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:45:31.157 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.5964ms
+2026-03-08 09:45:31.157 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.0214ms
+2026-03-08 09:45:31.187 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:45:31.187 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3083ms
+2026-03-08 09:45:31.240 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:45:31.240 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1092ms
+2026-03-08 09:45:31.240 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.5809ms
+2026-03-08 09:46:46.619 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:46:46.619 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.2702ms
+2026-03-08 09:46:46.619 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.6222ms
+2026-03-08 09:46:46.660 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:46:46.660 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3521ms
+2026-03-08 09:46:46.735 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:46:46.735 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0779ms
+2026-03-08 09:46:46.736 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3287ms
+2026-03-08 09:47:13.982 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:13.982 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3493ms
+2026-03-08 09:47:13.982 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.697ms
+2026-03-08 09:47:14.019 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:14.019 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2801ms
+2026-03-08 09:47:14.091 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:14.092 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1033ms
+2026-03-08 09:47:14.092 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4343ms
+2026-03-08 09:47:16.195 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:16.195 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3348ms
+2026-03-08 09:47:16.196 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7234ms
+2026-03-08 09:47:16.232 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:16.232 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2486ms
+2026-03-08 09:47:16.302 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:16.303 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0775ms
+2026-03-08 09:47:16.303 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3616ms
+2026-03-08 09:47:18.147 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:18.147 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.2453ms
+2026-03-08 09:47:18.147 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.5154ms
+2026-03-08 09:47:18.177 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:18.177 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3125ms
+2026-03-08 09:47:18.243 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:18.243 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0822ms
+2026-03-08 09:47:18.244 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3884ms
+2026-03-08 09:47:19.725 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:19.725 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.2388ms
+2026-03-08 09:47:19.725 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.5082ms
+2026-03-08 09:47:19.761 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:19.761 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2403ms
+2026-03-08 09:47:19.824 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:19.824 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0788ms
+2026-03-08 09:47:19.824 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3138ms
+2026-03-08 09:47:21.239 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:21.240 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.4206ms
+2026-03-08 09:47:21.240 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.0661ms
+2026-03-08 09:47:21.275 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:21.275 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2679ms
+2026-03-08 09:47:21.343 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:21.343 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0678ms
+2026-03-08 09:47:21.343 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3004ms
+2026-03-08 09:47:22.878 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:22.878 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3162ms
+2026-03-08 09:47:22.879 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.6724ms
+2026-03-08 09:47:22.913 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:22.913 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2859ms
+2026-03-08 09:47:22.978 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:22.979 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0888ms
+2026-03-08 09:47:22.980 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 1.7662ms
+2026-03-08 09:47:32.847 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:47:32.847 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.2865ms
+2026-03-08 09:47:32.848 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.5723ms
+2026-03-08 09:47:32.882 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:47:32.882 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3215ms
+2026-03-08 09:47:32.944 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:47:32.944 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0784ms
+2026-03-08 09:47:32.944 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3886ms
+2026-03-08 09:47:59.839 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 09:47:59.844 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — aucun fichier expiré trouvé
+2026-03-08 09:50:21.979 +01:00 [INF] FastEndpoints.StartupTimer Registered 2 endpoints in 143 milliseconds.
+2026-03-08 09:50:22.034 +01:00 [INF] FastEndpoints.Swagger.ValidationSchemaProcessor No validators found in the system!
+2026-03-08 09:50:22.039 +01:00 [INF]  API démarrée et prête à recevoir des requêtes
+2026-03-08 09:50:22.048 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Service de nettoyage démarré — intervalle=5 minute(s)
+2026-03-08 09:50:22.049 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 09:50:22.077 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — aucun fichier expiré trouvé
+2026-03-08 09:50:22.094 +01:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5070
+2026-03-08 09:50:22.094 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 09:50:22.094 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2026-03-08 09:50:22.094 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Api
+2026-03-08 09:50:22.140 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:50:22.168 +01:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2026-03-08 09:50:22.236 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 68.0924ms
+2026-03-08 09:50:22.237 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 97.4405ms
+2026-03-08 09:50:22.268 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:50:22.270 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.6461ms
+2026-03-08 09:50:22.344 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:50:22.347 +01:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-08 09:50:22.646 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 301.9020ms
+2026-03-08 09:50:22.647 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 302.4725ms
+2026-03-08 09:50:34.606 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:50:34.607 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 1.4195ms
+2026-03-08 09:50:34.608 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 2.3047ms
+2026-03-08 09:50:34.637 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:50:34.637 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.6748ms
+2026-03-08 09:50:34.688 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:50:34.688 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.3262ms
+2026-03-08 09:50:34.689 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.8909ms
+2026-03-08 09:50:39.163 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryFc8dj2Li5jU2dDOj 1220118
+2026-03-08 09:50:39.166 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:50:39.235 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:50:39.236 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Aucune limite fournie — durée de vie par défaut appliquée : 30 minutes
+2026-03-08 09:50:39.277 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=d22158a2b1614762b20adb3042fae2ef, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf, taille=1219706
+2026-03-08 09:50:39.278 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:39.279 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:39.286 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:50:39.292 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 2 chunk(s) produit(s)
+2026-03-08 09:50:39.293 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour d22158a2b1614762b20adb3042fae2ef — taille chiffrée=1219774
+2026-03-08 09:50:39.293 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:39.294 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.enc
+2026-03-08 09:50:39.295 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.enc
+2026-03-08 09:50:39.298 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:39.299 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.meta
+2026-03-08 09:50:39.305 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.meta
+2026-03-08 09:50:39.308 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=d22158a2b1614762b20adb3042fae2ef, expiration=2026-03-08T09:20:39.2983157+00:00, accesMax=illimité
+2026-03-08 09:50:39.309 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:39.321 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:50:39.322 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 157.5395ms
+2026-03-08 09:50:39.324 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 161.1177ms
+2026-03-08 09:50:55.594 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/v1/fichiers/d22158a2b1614762b20adb3042fae2ef - null null
+2026-03-08 09:50:55.595 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:50:55.599 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Réception d'une requête de téléchargement — identifiant=d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:55.602 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Demande de téléchargement — identifiant=d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:55.603 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Lecture des métadonnées : C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.meta
+2026-03-08 09:50:55.605 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Métadonnées chargées — identifiant=d22158a2b1614762b20adb3042fae2ef, accès=0/∞
+2026-03-08 09:50:55.605 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.meta
+2026-03-08 09:50:55.606 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.meta
+2026-03-08 09:50:55.610 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Compteur d'accès incrémenté — identifiant=d22158a2b1614762b20adb3042fae2ef, nouvel accès=1
+2026-03-08 09:50:55.610 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Début du déchiffrement AES-256-GCM pour d22158a2b1614762b20adb3042fae2ef
+2026-03-08 09:50:55.611 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Ouverture en lecture du fichier chiffré : C:/temp/fichiers-temporaires-dev\d22158a2b1614762b20adb3042fae2ef.enc
+2026-03-08 09:50:55.614 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de 2 chunk(s)
+2026-03-08 09:50:55.617 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de tous les chunks terminé
+2026-03-08 09:50:55.617 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Déchiffrement terminé pour d22158a2b1614762b20adb3042fae2ef — taille=1219706
+2026-03-08 09:50:55.618 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Téléchargement en cours — identifiant=d22158a2b1614762b20adb3042fae2ef, fichier=ZK9gXicPdnOEL9aVMKOC2.pdf
+2026-03-08 09:50:55.618 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Envoi du fichier en streaming — identifiant=d22158a2b1614762b20adb3042fae2ef, type=application/pdf
+2026-03-08 09:50:55.633 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:50:55.633 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /v1/fichiers/d22158a2b1614762b20adb3042fae2ef répondu 200 en 37.7818ms
+2026-03-08 09:50:55.634 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/v1/fichiers/d22158a2b1614762b20adb3042fae2ef - 200 1219706 application/pdf 39.1676ms
+2026-03-08 09:51:10.857 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundarySHkYth5Pwguzilx6 14397854
+2026-03-08 09:51:10.857 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:51:11.056 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:51:11.056 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Aucune limite fournie — durée de vie par défaut appliquée : 30 minutes
+2026-03-08 09:51:11.057 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=8d5f86ee221942c9a877f95e1662e673, fichier=MementoJanvier2026.pdf, taille=14397445
+2026-03-08 09:51:11.058 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:11.058 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:11.058 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:51:11.090 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 14 chunk(s) produit(s)
+2026-03-08 09:51:11.097 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 8d5f86ee221942c9a877f95e1662e673 — taille chiffrée=14397897
+2026-03-08 09:51:11.097 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:11.098 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.enc
+2026-03-08 09:51:11.105 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.enc
+2026-03-08 09:51:11.108 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:11.108 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.meta
+2026-03-08 09:51:11.108 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.meta
+2026-03-08 09:51:11.111 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=8d5f86ee221942c9a877f95e1662e673, expiration=2026-03-08T09:21:11.1080342+00:00, accesMax=illimité
+2026-03-08 09:51:11.112 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:11.112 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:51:11.112 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 254.8181ms
+2026-03-08 09:51:11.115 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 257.5828ms
+2026-03-08 09:51:19.857 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/v1/fichiers/8d5f86ee221942c9a877f95e1662e673 - null null
+2026-03-08 09:51:19.858 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:51:19.858 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Réception d'une requête de téléchargement — identifiant=8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:19.858 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Demande de téléchargement — identifiant=8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:19.859 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Lecture des métadonnées : C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.meta
+2026-03-08 09:51:19.859 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Métadonnées chargées — identifiant=8d5f86ee221942c9a877f95e1662e673, accès=0/∞
+2026-03-08 09:51:19.860 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.meta
+2026-03-08 09:51:19.860 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.meta
+2026-03-08 09:51:19.863 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Compteur d'accès incrémenté — identifiant=8d5f86ee221942c9a877f95e1662e673, nouvel accès=1
+2026-03-08 09:51:19.863 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Début du déchiffrement AES-256-GCM pour 8d5f86ee221942c9a877f95e1662e673
+2026-03-08 09:51:19.863 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Ouverture en lecture du fichier chiffré : C:/temp/fichiers-temporaires-dev\8d5f86ee221942c9a877f95e1662e673.enc
+2026-03-08 09:51:19.864 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de 14 chunk(s)
+2026-03-08 09:51:19.885 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de tous les chunks terminé
+2026-03-08 09:51:19.885 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Déchiffrement terminé pour 8d5f86ee221942c9a877f95e1662e673 — taille=14397445
+2026-03-08 09:51:19.885 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Téléchargement en cours — identifiant=8d5f86ee221942c9a877f95e1662e673, fichier=MementoJanvier2026.pdf
+2026-03-08 09:51:19.886 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Envoi du fichier en streaming — identifiant=8d5f86ee221942c9a877f95e1662e673, type=application/pdf
+2026-03-08 09:51:19.939 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:51:19.939 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /v1/fichiers/8d5f86ee221942c9a877f95e1662e673 répondu 200 en 81.1627ms
+2026-03-08 09:51:19.939 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/v1/fichiers/8d5f86ee221942c9a877f95e1662e673 - 200 14397445 application/pdf 81.6962ms
+2026-03-08 09:51:53.568 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryrVlc9YRp4lAUFiX7 14397854
+2026-03-08 09:51:53.568 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:51:53.716 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 09:51:53.717 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Nombre d'accès max fourni sans durée — durée de vie par défaut appliquée : 60 minutes
+2026-03-08 09:51:53.718 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=9b2985fde14848ff9b9eddfb2466abd3, fichier=MementoJanvier2026.pdf, taille=14397445
+2026-03-08 09:51:53.718 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:53.718 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:53.718 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 09:51:53.759 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 14 chunk(s) produit(s)
+2026-03-08 09:51:53.765 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 9b2985fde14848ff9b9eddfb2466abd3 — taille chiffrée=14397897
+2026-03-08 09:51:53.765 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:53.765 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.enc
+2026-03-08 09:51:53.772 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.enc
+2026-03-08 09:51:53.774 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:53.774 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:51:53.775 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:51:53.778 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=9b2985fde14848ff9b9eddfb2466abd3, expiration=2026-03-08T09:51:53.7748223+00:00, accesMax=1
+2026-03-08 09:51:53.778 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:53.778 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 09:51:53.778 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 210.3362ms
+2026-03-08 09:51:53.781 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 212.8357ms
+2026-03-08 09:51:59.749 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 - null null
+2026-03-08 09:51:59.750 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:51:59.750 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Réception d'une requête de téléchargement — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:59.750 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Demande de téléchargement — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:59.751 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Lecture des métadonnées : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:51:59.751 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Métadonnées chargées — identifiant=9b2985fde14848ff9b9eddfb2466abd3, accès=0/1
+2026-03-08 09:51:59.751 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:51:59.752 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:51:59.755 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Compteur d'accès incrémenté — identifiant=9b2985fde14848ff9b9eddfb2466abd3, nouvel accès=1
+2026-03-08 09:51:59.755 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Début du déchiffrement AES-256-GCM pour 9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:51:59.755 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Ouverture en lecture du fichier chiffré : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.enc
+2026-03-08 09:51:59.756 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de 14 chunk(s)
+2026-03-08 09:51:59.788 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Chiffrement.ServiceChiffrement Déchiffrement de tous les chunks terminé
+2026-03-08 09:51:59.788 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Déchiffrement terminé pour 9b2985fde14848ff9b9eddfb2466abd3 — taille=14397445
+2026-03-08 09:51:59.788 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Téléchargement en cours — identifiant=9b2985fde14848ff9b9eddfb2466abd3, fichier=MementoJanvier2026.pdf
+2026-03-08 09:51:59.789 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Envoi du fichier en streaming — identifiant=9b2985fde14848ff9b9eddfb2466abd3, type=application/pdf
+2026-03-08 09:51:59.846 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:51:59.847 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 répondu 200 en 96.6904ms
+2026-03-08 09:51:59.847 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 - 200 14397445 application/pdf 97.3619ms
+2026-03-08 09:52:00.698 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 - null null
+2026-03-08 09:52:00.698 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:52:00.698 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Réception d'une requête de téléchargement — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:52:00.699 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Demande de téléchargement — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:52:00.699 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Lecture des métadonnées : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:52:00.699 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Métadonnées chargées — identifiant=9b2985fde14848ff9b9eddfb2466abd3, accès=1/1
+2026-03-08 09:52:00.699 +01:00 [WRN] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Telechargement.GestionnaireTelechargementFichier Tentative de téléchargement d'un fichier expiré — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:52:00.700 +01:00 [WRN] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.TelechargementFichierEndpoint Fichier indisponible (expiré) — identifiant=9b2985fde14848ff9b9eddfb2466abd3
+2026-03-08 09:52:00.700 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: GET /v1/fichiers/{identifiant}'
+2026-03-08 09:52:00.700 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 répondu 404 en 2.1890ms
+2026-03-08 09:52:00.701 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/v1/fichiers/9b2985fde14848ff9b9eddfb2466abd3 - 404 null null 2.6298ms
+2026-03-08 09:52:56.038 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:52:56.039 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.6763ms
+2026-03-08 09:52:56.039 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.263ms
+2026-03-08 09:52:56.122 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:52:56.122 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3804ms
+2026-03-08 09:52:56.223 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:52:56.223 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1217ms
+2026-03-08 09:52:56.223 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4918ms
+2026-03-08 09:53:03.872 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:53:03.873 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.9132ms
+2026-03-08 09:53:03.874 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.2992ms
+2026-03-08 09:53:03.916 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:53:03.916 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4107ms
+2026-03-08 09:53:03.992 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:53:03.992 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0770ms
+2026-03-08 09:53:03.992 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4286ms
+2026-03-08 09:53:08.498 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 09:53:08.499 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.4117ms
+2026-03-08 09:53:08.499 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7935ms
+2026-03-08 09:53:08.534 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 09:53:08.534 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.343ms
+2026-03-08 09:53:08.596 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 09:53:08.596 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0936ms
+2026-03-08 09:53:08.596 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4765ms
+2026-03-08 09:55:22.081 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 09:55:22.083 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Suppression du fichier expiré — identifiant=9b2985fde14848ff9b9eddfb2466abd3, fichier=MementoJanvier2026.pdf
+2026-03-08 09:55:22.085 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier chiffré supprimé : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.enc
+2026-03-08 09:55:22.085 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Stockage.ServiceStockage Fichier de métadonnées supprimé : C:/temp/fichiers-temporaires-dev\9b2985fde14848ff9b9eddfb2466abd3.meta
+2026-03-08 09:55:22.086 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — 1 fichier(s) supprimé(s), 0 erreur(s)
+2026-03-08 10:00:22.092 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 10:00:22.095 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — aucun fichier expiré trouvé
+2026-03-08 10:03:07.699 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:03:07.700 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3318ms
+2026-03-08 10:03:07.700 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7147ms
+2026-03-08 10:03:07.771 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:03:07.772 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2717ms
+2026-03-08 10:03:07.843 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:03:07.843 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1173ms
+2026-03-08 10:03:07.844 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.5272ms
+2026-03-08 10:05:22.087 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Début du passage de nettoyage
+2026-03-08 10:05:22.090 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Nettoyage terminé — aucun fichier expiré trouvé
+2026-03-08 10:06:44.630 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:06:44.630 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3704ms
+2026-03-08 10:06:44.631 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7715ms
+2026-03-08 10:06:44.714 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:06:44.714 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3465ms
+2026-03-08 10:06:44.801 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:06:44.801 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1283ms
+2026-03-08 10:06:44.801 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.5093ms
+2026-03-08 10:06:47.513 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:06:47.513 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3264ms
+2026-03-08 10:06:47.513 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7168ms
+2026-03-08 10:06:47.552 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:06:47.553 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.543ms
+2026-03-08 10:06:47.633 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:06:47.633 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0952ms
+2026-03-08 10:06:47.633 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4465ms
+2026-03-08 10:06:49.250 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:06:49.250 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3198ms
+2026-03-08 10:06:49.250 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.6592ms
+2026-03-08 10:06:49.281 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:06:49.281 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2357ms
+2026-03-08 10:06:49.340 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:06:49.340 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0783ms
+2026-03-08 10:06:49.340 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.3336ms
+2026-03-08 10:06:50.861 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:06:50.861 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.4439ms
+2026-03-08 10:06:50.862 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.7914ms
+2026-03-08 10:06:50.893 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:06:50.893 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2468ms
+2026-03-08 10:06:50.947 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:06:50.948 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.0980ms
+2026-03-08 10:06:50.948 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4717ms
+2026-03-08 10:06:56.209 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:06:56.210 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.6294ms
+2026-03-08 10:06:56.210 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 1.1842ms
+2026-03-08 10:06:56.244 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:06:56.245 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2804ms
+2026-03-08 10:06:56.295 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:06:56.295 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1121ms
+2026-03-08 10:06:56.295 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.5343ms
+2026-03-08 10:07:17.482 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:07:17.482 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 0.3188ms
+2026-03-08 10:07:17.482 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 0.6387ms
+2026-03-08 10:07:17.514 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:07:17.514 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2819ms
+2026-03-08 10:07:17.568 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:07:17.568 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 0.1161ms
+2026-03-08 10:07:17.568 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 0.4958ms
+2026-03-08 10:08:16.596 +01:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+2026-03-08 10:08:16.606 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Infrastructure.Nettoyage.ServiceNettoyage Service de nettoyage arrêté
+2026-03-08 10:11:18.791 +01:00 [INF] FastEndpoints.StartupTimer Registered 2 endpoints in 137 milliseconds.
+2026-03-08 10:11:18.841 +01:00 [INF] FastEndpoints.Swagger.ValidationSchemaProcessor No validators found in the system!
+2026-03-08 10:11:18.846 +01:00 [INF]  API démarrée et prête à recevoir des requêtes
+2026-03-08 10:11:18.870 +01:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5070
+2026-03-08 10:11:18.870 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 10:11:18.870 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2026-03-08 10:11:18.870 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Api
+2026-03-08 10:11:19.056 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/weatherforecast - null null
+2026-03-08 10:11:19.084 +01:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2026-03-08 10:11:19.088 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /weatherforecast répondu 404 en 3.8111ms
+2026-03-08 10:11:19.092 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/weatherforecast - 404 0 null 36.5966ms
+2026-03-08 10:11:19.095 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5070/weatherforecast, Response status code: 404
+2026-03-08 10:14:42.903 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/index.html - null null
+2026-03-08 10:14:42.985 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/index.html répondu 200 en 81.7596ms
+2026-03-08 10:14:42.986 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/index.html - 200 null text/html; charset=utf-8 83.0731ms
+2026-03-08 10:14:43.003 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-08 10:14:43.005 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.8647ms
+2026-03-08 10:14:43.061 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - null null
+2026-03-08 10:14:43.065 +01:00 [INF] Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-08 10:14:43.484 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /swagger/v1/swagger.json répondu 200 en 421.8020ms
+2026-03-08 10:14:43.484 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 422.5072ms
+2026-03-08 10:15:05.663 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryoReIFEft33bntAWi 11016257
+2026-03-08 10:15:05.665 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 10:15:05.835 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 10:15:05.886 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=006497b4e5ce4e8a8759a526f339ee96, fichier=Realtek-USB-GBE-Ethernet-Controller-Driver_NW6K3_WIN64_1156.19.20.603_A32.EXE, taille=11015784
+2026-03-08 10:15:05.887 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier 006497b4e5ce4e8a8759a526f339ee96
+2026-03-08 10:15:05.887 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour 006497b4e5ce4e8a8759a526f339ee96
+2026-03-08 10:15:05.895 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 10:15:05.909 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 11 chunk(s) produit(s)
+2026-03-08 10:15:05.915 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour 006497b4e5ce4e8a8759a526f339ee96 — taille chiffrée=11016140
+2026-03-08 10:15:05.915 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour 006497b4e5ce4e8a8759a526f339ee96
+2026-03-08 10:15:05.916 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\006497b4e5ce4e8a8759a526f339ee96.enc
+2026-03-08 10:15:05.921 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\006497b4e5ce4e8a8759a526f339ee96.enc
+2026-03-08 10:15:05.925 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour 006497b4e5ce4e8a8759a526f339ee96
+2026-03-08 10:15:05.926 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\006497b4e5ce4e8a8759a526f339ee96.meta
+2026-03-08 10:15:05.951 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\006497b4e5ce4e8a8759a526f339ee96.meta
+2026-03-08 10:15:05.955 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=006497b4e5ce4e8a8759a526f339ee96, expiration=2026-03-08T09:16:05.9245844+00:00, accesMax=illimité
+2026-03-08 10:15:05.956 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=006497b4e5ce4e8a8759a526f339ee96
+2026-03-08 10:15:05.971 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 10:15:05.973 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 308.2659ms
+2026-03-08 10:15:05.976 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 313.1303ms
+2026-03-08 10:17:31.449 +01:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...
+2026-03-08 10:30:09.738 +01:00 [INF] FastEndpoints.StartupTimer Registered 2 endpoints in 143 milliseconds.
+2026-03-08 10:30:09.787 +01:00 [INF] FastEndpoints.Swagger.ValidationSchemaProcessor No validators found in the system!
+2026-03-08 10:30:09.791 +01:00 [INF]  API démarrée et prête à recevoir des requêtes
+2026-03-08 10:30:09.813 +01:00 [INF] Microsoft.Hosting.Lifetime Now listening on: http://localhost:5070
+2026-03-08 10:30:09.814 +01:00 [INF] Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2026-03-08 10:30:09.814 +01:00 [INF] Microsoft.Hosting.Lifetime Hosting environment: Development
+2026-03-08 10:30:09.814 +01:00 [INF] Microsoft.Hosting.Lifetime Content root path: D:\Developpement\git\Zorg320.Utilitaire.FichierTemporaire\src\Zorg320.Utilitaire.FichierTemporaire.Api
+2026-03-08 10:30:10.015 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5070/weatherforecast - null null
+2026-03-08 10:30:10.045 +01:00 [WRN] Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware Failed to determine the https port for redirect.
+2026-03-08 10:30:10.049 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP GET /weatherforecast répondu 404 en 3.9678ms
+2026-03-08 10:30:10.053 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5070/weatherforecast - 404 0 null 38.6003ms
+2026-03-08 10:30:10.056 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5070/weatherforecast, Response status code: 404
+2026-03-08 10:30:21.122 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 POST http://localhost:5070/v1/fichiers - multipart/form-data; boundary=----WebKitFormBoundaryfnSIe331gAZHkiVn 11016257
+2026-03-08 10:30:21.124 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 10:30:21.298 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réception d'une requête d'upload
+2026-03-08 10:30:21.365 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Cles.GestionnaireCles Trousseau initialisé — première clé générée, version=2fd2773513474f608e5d74581bdd3fd4
+2026-03-08 10:30:21.367 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload démarré — identifiant=a16b2e4cb2f848b7bcd4366645244177, fichier=Realtek-USB-GBE-Ethernet-Controller-Driver_NW6K3_WIN64_1156.19.20.603_A32.EXE, taille=11015784
+2026-03-08 10:30:21.367 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Clé maître sélectionnée — version=2fd2773513474f608e5d74581bdd3fd4
+2026-03-08 10:30:21.368 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Sel HKDF généré pour le fichier a16b2e4cb2f848b7bcd4366645244177
+2026-03-08 10:30:21.368 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Début du chiffrement AES-256-GCM pour a16b2e4cb2f848b7bcd4366645244177
+2026-03-08 10:30:21.376 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Chiffrement.ServiceChiffrement Lecture et chiffrement des chunks (taille chunk=1048576)
+2026-03-08 10:30:21.391 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Chiffrement.ServiceChiffrement Chiffrement terminé — 11 chunk(s) produit(s)
+2026-03-08 10:30:21.397 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Chiffrement terminé pour a16b2e4cb2f848b7bcd4366645244177 — taille chiffrée=11016140
+2026-03-08 10:30:21.397 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture du fichier chiffré sur le disque pour a16b2e4cb2f848b7bcd4366645244177
+2026-03-08 10:30:21.398 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Sauvegarde du fichier chiffré → C:/temp/fichiers-temporaires-dev\a16b2e4cb2f848b7bcd4366645244177.enc
+2026-03-08 10:30:21.403 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Fichier chiffré sauvegardé : C:/temp/fichiers-temporaires-dev\a16b2e4cb2f848b7bcd4366645244177.enc
+2026-03-08 10:30:21.407 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Écriture des métadonnées pour a16b2e4cb2f848b7bcd4366645244177
+2026-03-08 10:30:21.408 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Sauvegarde des métadonnées → C:/temp/fichiers-temporaires-dev\a16b2e4cb2f848b7bcd4366645244177.meta
+2026-03-08 10:30:21.428 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Noyau.Infrastructure.Stockage.ServiceStockage Métadonnées sauvegardées : C:/temp/fichiers-temporaires-dev\a16b2e4cb2f848b7bcd4366645244177.meta
+2026-03-08 10:30:21.432 +01:00 [INF] Zorg320.Utilitaire.FichierTemporaire.Api.Application.Upload.GestionnaireUploadFichier Upload réussi — identifiant=a16b2e4cb2f848b7bcd4366645244177, expiration=2026-03-08T09:31:21.4072625+00:00, accesMax=illimité, versionCle=2fd2773513474f608e5d74581bdd3fd4
+2026-03-08 10:30:21.433 +01:00 [DBG] Zorg320.Utilitaire.FichierTemporaire.Api.Endpoints.V1.UploadFichierEndpoint Réponse 201 envoyée pour upload — identifiant=a16b2e4cb2f848b7bcd4366645244177
+2026-03-08 10:30:21.442 +01:00 [INF] Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'HTTP: POST /v1/fichiers'
+2026-03-08 10:30:21.444 +01:00 [INF] Serilog.AspNetCore.RequestLoggingMiddleware HTTP POST /v1/fichiers répondu 201 en 320.6670ms
+2026-03-08 10:30:21.447 +01:00 [INF] Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 POST http://localhost:5070/v1/fichiers - 201 null application/json; charset=utf-8 325.2774ms
+2026-03-08 10:36:02.852 +01:00 [INF] Microsoft.Hosting.Lifetime Application is shutting down...

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "RGhL5M6ZSco=",
+  "success": true,
+  "projectFilePath": "D:\\Developpement\\git\\Zorg320.Utilitaire.FichierTemporaire\\src\\Zorg320.Utilitaire.FichierTemporaire.Noyau\\Zorg320.Utilitaire.FichierTemporaire.Noyau.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\bruno\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

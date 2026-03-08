@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Zorg320.Utilitaire.FichierTemporaire.Api</RootNamespace>
+    <AssemblyName>Zorg320.Utilitaire.FichierTemporaire.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="5.*" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.*" />
+    <PackageReference Include="MediatR" Version="12.*" />
+    <PackageReference Include="FluentValidation" Version="11.*" />
+    <PackageReference Include="Flurl" Version="4.*" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.*" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.*" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zorg320.Utilitaire.FichierTemporaire.Noyau\Zorg320.Utilitaire.FichierTemporaire.Noyau.csproj" />
+  </ItemGroup>
+
+</Project>
