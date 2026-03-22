@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zorg320.Utilitaire.FichierTemporaire.Worker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c534b5ab8c74c38c653ddf875789b9836f26728")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6486eb66070620a4a96ee11b0f2f6d4d8f79bc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zorg320.Utilitaire.FichierTemporaire.Worker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zorg320.Utilitaire.FichierTemporaire.Worker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
