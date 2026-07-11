@@ -39,7 +39,7 @@ public sealed class TelechargementFichierEndpoint : Endpoint<RequeteTelechargeme
     /// </summary>
     public override void Configure()
     {
-        Get("/v1/fichiers/{identifiant}");
+        Get("/v1/fichiers/{identifiant:guid}");
         AllowAnonymous();
         Options(o => o
             .WithTags("Fichiers")

@@ -9,7 +9,7 @@ Zorg320.Utilitaire.FichierTemporaire est une solution .NET 8 complète pour la g
 
 ## ✨ Fonctionnalités principales
 
-- **API REST** pour l'upload et le téléchargement de fichiers
+- **API REST** pour l'upload, la vérification et le téléchargement de fichiers
 - **Chiffrement** automatique des fichiers stockés
 - **Gestion des clés** de chiffrement avec rotation automatique
 - **Nettoyage** automatique des fichiers temporaires expirés
@@ -24,8 +24,8 @@ La solution est composée de 3 projets principaux :
 ### 1. **Zorg320.Utilitaire.FichierTemporaire.Api**
 API REST basée sur FastEndpoints pour :
 - Upload de fichiers
+- Vérification de disponibilité d'un fichier
 - Téléchargement de fichiers
-- Endpoints de gestion des fichiers
 
 ### 2. **Zorg320.Utilitaire.FichierTemporaire.Noyau**
 Bibliothèque partagée contenant :
@@ -115,9 +115,13 @@ dotnet run
 
 ## 📊 Endpoints API
 
-- `POST /api/v1/fichiers/upload` - Upload d'un fichier
-- `GET /api/v1/fichiers/{id}/download` - Téléchargement d'un fichier
-- Voir la documentation Swagger pour la liste complète
+| Méthode | Route | Description |
+|---------|-------|-------------|
+| `POST` | `/v1/fichiers` | Upload d'un fichier avec ses limites d'expiration |
+| `HEAD` | `/v1/fichiers/{identifiant}` | Vérifier la disponibilité sans consommer d'accès |
+| `GET` | `/v1/fichiers/{identifiant}` | Télécharger le fichier déchiffré en streaming |
+
+> Voir la documentation Swagger sur `/swagger` pour le détail des paramètres et des réponses.
 
 ## 📝 Logs
 

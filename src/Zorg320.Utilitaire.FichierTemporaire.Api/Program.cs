@@ -44,6 +44,9 @@ try
         .Configure<ConfigurationCles>(builder.Configuration.GetSection(ConfigurationCles.Section))
         .Configure<ConfigurationAuthentification>(builder.Configuration.GetSection(ConfigurationAuthentification.Section));
 
+    // ─── Data Protection (chiffrement du trousseau de clés au repos) ─────────
+    builder.Services.AddDataProtection();
+
     // ─── Services applicatifs ─────────────────────────────────────────────────
     builder.Services.AddSingleton<IGestionnaireCles, GestionnaireCles>();
     builder.Services.AddSingleton<IServiceChiffrement, ServiceChiffrement>();
@@ -156,8 +159,9 @@ try
 
                     1. **Upload** — `POST /v1/fichiers` — déposer le fichier avec ses limites d'expiration.
                     2. **Réception** — l'API retourne un `identifiant` unique et un lien de téléchargement.
-                    3. **Téléchargement** — `GET /v1/fichiers/{identifiant}` — récupérer le fichier déchiffré en streaming.
-                    4. **Expiration** — le fichier devient inaccessible (HTTP 404) dès que l'une des limites est atteinte.
+                    3. **Vérification** *(optionnel)* — `HEAD /v1/fichiers/{identifiant}` — contrôler la disponibilité sans consommer d'accès.
+                    4. **Téléchargement** — `GET /v1/fichiers/{identifiant}` — récupérer le fichier déchiffré en streaming.
+                    5. **Expiration** — le fichier devient inaccessible (HTTP 404) dès que l'une des limites est atteinte.
 
                     ---
 

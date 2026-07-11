@@ -156,9 +156,31 @@ public sealed class ServiceStockage : IServiceStockage
 
     /// <summary>Construit le chemin complet du fichier chiffré pour un identifiant donné.</summary>
     private string CheminFichier(string identifiant)
-        => Path.Combine(_config.CheminRacine, $"{identifiant}{_config.ExtensionFichier}");
+    {
+        ValiderIdentifiant(identifiant);
+        return Path.Combine(_config.CheminRacine, $"{identifiant}{_config.ExtensionFichier}");
+    }
 
     /// <summary>Construit le chemin complet du fichier de métadonnées pour un identifiant donné.</summary>
     private string CheminMetadonnees(string identifiant)
-        => Path.Combine(_config.CheminRacine, $"{identifiant}{_config.ExtensionMetadonnees}");
+    {
+        ValiderIdentifiant(identifiant);
+        return Path.Combine(_config.CheminRacine, $"{identifiant}{_config.ExtensionMetadonnees}");
+    }
+
+    /// <summary>
+    /// Vérifie que l'identifiant est un GUID valide et que le chemin résolu reste dans CheminRacine.
+    /// Double protection contre la traversée de chemin : format GUID + vérification de frontière.
+    /// </summary>
+    private void ValiderIdentifiant(string identifiant)
+    {
+        if (!Guid.TryParse(identifiant, out _))
+            throw new ArgumentException($"Identifiant invalide.", nameof(identifiant));
+
+        var racine = Path.GetFullPath(_config.CheminRacine);
+        var chemin = Path.GetFullPath(Path.Combine(racine, identifiant));
+
+        if (!chemin.StartsWith(racine, StringComparison.OrdinalIgnoreCase))
+            throw new ArgumentException("Chemin hors racine.", nameof(identifiant));
+    }
 }

@@ -31,6 +31,9 @@ try
         .Configure<ConfigurationNettoyage>(builder.Configuration.GetSection(ConfigurationNettoyage.Section))
         .Configure<ConfigurationCles>(builder.Configuration.GetSection(ConfigurationCles.Section));
 
+    // ─── Data Protection (chiffrement du trousseau de clés au repos) ─────────
+    builder.Services.AddDataProtection();
+
     // ─── Services ─────────────────────────────────────────────────────────────
     builder.Services.AddSingleton<IGestionnaireCles, GestionnaireCles>();
     builder.Services.AddSingleton<IServiceStockage, ServiceStockage>();
