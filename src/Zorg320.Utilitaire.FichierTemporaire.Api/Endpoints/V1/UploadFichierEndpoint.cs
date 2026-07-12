@@ -96,8 +96,14 @@ public sealed class UploadFichierEndpoint : Endpoint<RequeteUpload, ReponseBase<
     {
         _logger.LogDebug("Réception d'une requête d'upload");
 
+        // Lecture directe depuis le form-data pour éviter la tentative de désérialisation JSON
+        // par FastEndpoints v5 sur le corps multipart brut.
+        var fichier = Files.GetFile("Fichier");
+        int? dureeVieMinutesForm = int.TryParse(Form["DureeVieMinutes"], out var d) && d > 0 ? d : null;
+        int? nombreAccesMaxForm = int.TryParse(Form["NombreAccesMax"], out var n) && n > 0 ? n : null;
+
         // Vérification de la présence du fichier
-        if (req.Fichier is null || req.Fichier.Length == 0)
+        if (fichier is null || fichier.Length == 0)
         {
             _logger.LogWarning("Upload refusé — aucun fichier fourni");
             await SendAsync(
@@ -108,8 +114,8 @@ public sealed class UploadFichierEndpoint : Endpoint<RequeteUpload, ReponseBase<
         }
 
         // Normalisation : une chaîne vide soumise en form-data est liée comme 0 — on le traite comme null
-        var dureeVieMinutes = req.DureeVieMinutes > 0 ? req.DureeVieMinutes : null;
-        var nombreAccesMax = req.NombreAccesMax > 0 ? req.NombreAccesMax : null;
+        var dureeVieMinutes = dureeVieMinutesForm;
+        var nombreAccesMax = nombreAccesMaxForm;
 
         // Durée de vie par défaut si non fournie :
         //   - 60 minutes quand un nombre d'accès max est précisé
@@ -131,10 +137,10 @@ public sealed class UploadFichierEndpoint : Endpoint<RequeteUpload, ReponseBase<
         // Construction et validation de la commande MediatR
         var commande = new CommandeUploadFichier
         {
-            Contenu = req.Fichier.OpenReadStream(),
-            NomFichier = req.Fichier.FileName,
-            TypeMime = req.Fichier.ContentType,
-            TailleOctets = req.Fichier.Length,
+            Contenu = fichier.OpenReadStream(),
+            NomFichier = fichier.FileName,
+            TypeMime = fichier.ContentType,
+            TailleOctets = fichier.Length,
             DureeVieMinutes = dureeVieMinutes,
             NombreAccesMax = nombreAccesMax
         };
