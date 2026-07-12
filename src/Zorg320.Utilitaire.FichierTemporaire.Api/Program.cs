@@ -2,6 +2,7 @@ using FastEndpoints;
 using FastEndpoints.Swagger;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Serilog;
 using Zorg320.Utilitaire.FichierTemporaire.Api;
 using Zorg320.Utilitaire.FichierTemporaire.Api.Configuration;
