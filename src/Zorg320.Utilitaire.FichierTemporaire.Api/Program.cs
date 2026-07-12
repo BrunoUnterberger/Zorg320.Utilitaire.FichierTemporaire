@@ -25,6 +25,15 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
 
+    // ─── Lecture anticipée de la configuration de stockage ───────────────────
+    var configStockage = builder.Configuration
+        .GetSection(ConfigurationStockage.Section)
+        .Get<ConfigurationStockage>();
+
+    // ─── Kestrel : limite de taille des requêtes ──────────────────────────────
+    builder.WebHost.ConfigureKestrel(options =>
+        options.Limits.MaxRequestBodySize = configStockage?.TailleMaxUploadOctets ?? 524_288_000);
+
     // ─── Serilog ──────────────────────────────────────────────────────────────
     builder.Host.UseSerilog((ctx, services, config) =>
         config.ReadFrom.Configuration(ctx.Configuration)
@@ -45,7 +54,15 @@ try
         .Configure<ConfigurationAuthentification>(builder.Configuration.GetSection(ConfigurationAuthentification.Section));
 
     // ─── Data Protection (chiffrement du trousseau de clés au repos) ─────────
-    builder.Services.AddDataProtection();
+    // Stocké sous {CheminRacine}/dataprotection-keys — même volume que les fichiers,
+    // une seule variable Stockage__CheminRacine suffit à tout configurer en prod.
+    var dirDataProtection = Path.Combine(
+        configStockage?.CheminRacine ?? "data",
+        "dataprotection-keys");
+    builder.Services
+        .AddDataProtection()
+        .PersistKeysToFileSystem(new DirectoryInfo(dirDataProtection))
+        .SetApplicationName("Zorg320.FichierTemporaire");
 
     // ─── Services applicatifs ─────────────────────────────────────────────────
     builder.Services.AddSingleton<IGestionnaireCles, GestionnaireCles>();

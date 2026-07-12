@@ -16,4 +16,7 @@ public sealed class ConfigurationStockage
 
     /// <summary>Extension utilisée pour les fichiers de métadonnées (ex. : .meta).</summary>
     public string ExtensionMetadonnees { get; init; } = ".meta";
+
+    /// <summary>Taille maximale autorisée pour un upload en octets (défaut : 500 Mo).</summary>
+    public long TailleMaxUploadOctets { get; init; } = 524_288_000;
 }

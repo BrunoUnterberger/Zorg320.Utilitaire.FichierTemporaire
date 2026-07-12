@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Zorg320.Utilitaire.FichierTemporaire.Noyau.Application.Interfaces;
@@ -32,7 +33,18 @@ try
         .Configure<ConfigurationCles>(builder.Configuration.GetSection(ConfigurationCles.Section));
 
     // ─── Data Protection (chiffrement du trousseau de clés au repos) ─────────
-    builder.Services.AddDataProtection();
+    // Stocké sous {CheminRacine}/dataprotection-keys — même volume que les fichiers,
+    // une seule variable Stockage__CheminRacine suffit à tout configurer en prod.
+    var configStockage = builder.Configuration
+        .GetSection(ConfigurationStockage.Section)
+        .Get<ConfigurationStockage>();
+    var dirDataProtection = Path.Combine(
+        configStockage?.CheminRacine ?? "data",
+        "dataprotection-keys");
+    builder.Services
+        .AddDataProtection()
+        .PersistKeysToFileSystem(new DirectoryInfo(dirDataProtection))
+        .SetApplicationName("Zorg320.FichierTemporaire");
 
     // ─── Services ─────────────────────────────────────────────────────────────
     builder.Services.AddSingleton<IGestionnaireCles, GestionnaireCles>();
